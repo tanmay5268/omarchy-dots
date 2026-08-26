@@ -21,8 +21,14 @@
 -- o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-menu toggle root")
 
 -- Disable a default binding without replacing it.
+hl.unbind("SUPER + SHIFT + B")
+hl.unbind("SUPER + SHIFT + ALT + B")
+hl.unbind("SUPER + SHIFT + RETURN")
+hl.unbind("SUPER + ALT + SPACE")
+hl.unbind("SUPER + F")
+hl.unbind("SUPER + T")
+hl.unbind("SUPER + W")
 -- hl.unbind("SUPER + SHIFT + B")
-
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
 -- o.bind("SUPER + H", nil, "voxtype record toggle")

@@ -6,11 +6,11 @@
 hl.config({
   input = {
     -- Use multiple keyboard layouts and switch between them with Left Alt + Right Alt.
-    kb_layout = "us,dk,eu",
-    kb_options = "compose:caps,shift:both_capslock_cancel,grp:alts_toggle",
+    kb_layout = "us",
+    -- kb_options = "compose:caps,shift:both_capslock_cancel,grp:alts_toggle",
 
     -- Use a specific keyboard variant if needed (e.g. intl for international keyboards).
-    kb_variant = "intl",
+    kb_variant = "",
 
     -- Change speed of keyboard repeat.
     repeat_rate = 40,
@@ -27,7 +27,7 @@ hl.config({
 
     touchpad = {
       -- Use natural (inverse) scrolling.
-      natural_scroll = false,
+      natural_scroll = true,
 
       -- Use two-finger clicks for right-click instead of lower-right corner.
       clickfinger_behavior = true,
@@ -50,7 +50,7 @@ hl.config({
 
 -- Enable touchpad gestures for changing workspaces.
 -- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Gestures/
-hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
+-- hl.gesture({ fingers = 3, direction = "horizontal", action = "workspace" })
 
 -- Enable touchpad gestures for moving focus (helpful on scrolling layout).
 -- hl.gesture({ fingers = 3, direction = "left", action = function() hl.dispatch(hl.dsp.focus({ direction = "l" })) end })

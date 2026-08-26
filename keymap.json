@@ -1,0 +1,72 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "enter": "project_panel::Open"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "unbind": {
+      "space": "project_panel::Open"
+    }
+  },
+  {
+    "unbind": {
+      "ctrl-alt-i": "dev::ToggleInspector"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-alt-i": "agent::ToggleFocus"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-alt-i": "agent::Toggle"
+    }
+  },
+  {
+    "context": "Terminal",
+    "unbind": {
+      "ctrl-b": [
+        "terminal::SendKeystroke",
+        "ctrl-b"
+      ]
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-b": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-b": "project_panel::Toggle"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-shift-n": "project_panel::NewDirectory"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "unbind": {
+      "ctrl-alt-n": "project_panel::NewDirectory"
+    }
+  }
+]
