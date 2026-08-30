@@ -299,6 +299,7 @@ hl.bind("SUPER + S", hl.dsp.workspace.toggle_special("special"), { description =
 --     { description = "Session: Shut down" })
 
 -- --##! Apps
+o.bind("SUPER + SPACE", "Omarchy menu", "omarchy menu")
 hl.bind("SUPER + T", hl.dsp.exec_cmd("kitty"))
 -- hl.bind("SUPER + SPACE", hl.dsp.exec_cmd("omarchy-menu toggle root"))
 hl.bind("SUPER + E", hl.dsp.exec_cmd(fileManager), { description = "App: File manager" })

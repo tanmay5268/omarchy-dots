@@ -17,8 +17,8 @@
 
 -- Change an existing binding by unbinding it first, then binding the key again.
 -- This example changes SUPER+SPACE from the launcher to the Omarchy root menu.
--- hl.unbind("SUPER + SPACE")
--- o.bind("SUPER + SPACE", "Omarchy menu", "omarchy-menu toggle root")
+ -- hl.unbind("SUPER + SPACE")
+ 
 
 -- Disable a default binding without replacing it.
 hl.unbind("SUPER + SHIFT + B")
