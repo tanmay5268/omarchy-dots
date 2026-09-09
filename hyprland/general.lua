@@ -13,7 +13,7 @@
 -- })
 hl.gesture({
     fingers = 3,
-    direction = "vertical",
+    direction = "horizontal",
     action = "workspace"
 })
 -- hl.gesture({
@@ -42,10 +42,10 @@ hl.config({
     },
     general = {
         gaps_in = 3,
-        gaps_out = 0,
+        gaps_out = 4,
         gaps_workspaces = 50,
 
-        border_size = 2,
+        border_size = 0,
 
         col = {
             active_border = "rgba(0DB7D455)",
@@ -63,8 +63,8 @@ hl.config({
         }
     },
     decoration = {
-        rounding_power = 2.5,
-        rounding = 18,
+        -- rounding_power = 2.5,
+        -- rounding = 18,
 
         blur = {
             enabled = true,
@@ -84,7 +84,7 @@ hl.config({
             input_methods_ignorealpha = 0.8
         },
         shadow = {
-            enabled = true,
+            enabled = false,
             range = 20,
             offset = {0, 2},
             render_power = 10,
@@ -92,7 +92,7 @@ hl.config({
         },
         dim_inactive = true,
         dim_strength = 0.05,
-        dim_special = 0.2
+        dim_special = 0.5
     },
     animations = {
         enabled = true
@@ -216,7 +216,7 @@ hl.animation({
     enabled = true,
     speed = 7,
     bezier = "menu_decel",
-    style = "slidevert"
+    style = "slide"
 })
 -- specialWorkspace
 hl.animation({

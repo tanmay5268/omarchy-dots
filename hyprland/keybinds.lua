@@ -299,8 +299,11 @@ hl.bind("SUPER + S", hl.dsp.workspace.toggle_special("special"), { description =
 --     { description = "Session: Shut down" })
 
 -- --##! Apps
-o.bind("SUPER + SPACE", "Omarchy menu", "omarchy menu")
+-- o.bind("SUPER + SPACE", "Omarchy menu", "omarchy menu")
 hl.bind("SUPER + T", hl.dsp.exec_cmd("kitty"))
+hl.bind("SUPER + N", hl.dsp.exec_cmd("omarchy-shell jankeesvw.notification-center toggle"))
+-- hl.bind("SUPER + SHIFT + N", hl.dsp.exec_cmd("omarchy toggle nightlight"), { description = "Toggle Nightlight" })
+hl.bind("SUPER + G", hl.dsp.exec_cmd("gaming-mode toggle"), { description = "Toggle Gaming Mode" })
 -- hl.bind("SUPER + SPACE", hl.dsp.exec_cmd("omarchy-menu toggle root"))
 hl.bind("SUPER + E", hl.dsp.exec_cmd(fileManager), { description = "App: File manager" })
 hl.bind("SUPER + W", hl.dsp.exec_cmd(browser), { description = "App: Browser" })
@@ -312,4 +315,4 @@ hl.bind("SUPER + Z", hl.dsp.exec_cmd(codeEditor), { description = "App: Code edi
 -- hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd(taskManager), { description = "App: Task manager" })
 
 -- -- Resize window to specific size
--- hl.bind("CTRL + SUPER + Backslash", hl.dsp.window.resize({ x = 640, y = 480, "exact" }))
+hl.bind("CTRL + SUPER + Backslash", hl.dsp.window.resize({ x = 640, y = 480, "exact" }))

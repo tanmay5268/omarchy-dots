@@ -4,7 +4,7 @@
 -- hl.window_rule({match = {class = "^()$", title = "^()$" },                   no_blur = true })
 
 -- Disable blur for every window
-hl.window_rule({ match = { class = ".*" }, no_blur = false, opacity = 0.90 })
+hl.window_rule({ match = { class = ".*" }, no_blur = false, opacity = 1 })
 
 
 -- -- Floating

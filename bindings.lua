@@ -24,10 +24,13 @@
 hl.unbind("SUPER + SHIFT + B")
 hl.unbind("SUPER + SHIFT + ALT + B")
 hl.unbind("SUPER + SHIFT + RETURN")
+hl.unbind("SUPER + SHIFT + S")
 hl.unbind("SUPER + ALT + SPACE")
 hl.unbind("SUPER + F")
 hl.unbind("SUPER + T")
 hl.unbind("SUPER + W")
+hl.unbind("SUPER + G")
+hl.unbind("SUPER + S")
 -- hl.unbind("SUPER + SHIFT + B")
 -- Logitech MX Keys examples:
 -- o.bind("SUPER + SHIFT + S", nil, "omarchy-capture-screenshot")
